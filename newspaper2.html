@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>News Paper</title>
+    <style>
+        body {
+            background-color: rgb(185, 184, 184);
+        }
+
+        .cellContainer {
+            width: 50%;
+            float: left;
+        }
+
+        .row {
+            padding: 10px;
+            color: black;
+        }
+
+        .textBold {
+            font-weight: bold;
+        }
+
+        hr {
+            display: block;
+            height: 2px;
+            border: 2px solid black;
+            margin: 0;
+        }
+        .today {        
+            color:white;
+            font-weight: bold;
+            border-bottom: 30px solid maroon;     
+            border-right: 5px solid transparent;
+            height: 0;
+            width: 100px;
+            text-align: center;
+        }
+        #grid {
+            display: grid;
+            height: 100px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px;
+            column-gap: 20px;
+            margin-bottom:70px;
+        }
+
+        #grid > div {      
+        height:170px;
+        }
+        .pages {
+            height:30px;
+            width:33px;
+            border-radius: 50%;
+            background-color: black;
+            color:white;
+            font-size: 10px;
+            text-align: center;
+            margin-top: 120px;
+            float: right;
+        }
+        .newspaper {
+            column-count: 2;
+            column-gap: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        
+                <div style="margin: 50px; background-color: white;">
+                    <div class="row justify-content-between" style="padding:70px;">  
+                        <div class="col-5 textBold">
+                            25 Lorem ipsum 1234/56/78
+                        </div>
+                        <div class="col-5 textBold" style="text-align: right;">
+                            lorem ipsum dolor sit amet
+                        </div>
+                        
+                        <hr>
+                        <p>Lorem ipsum dolor, consectetur adipisicing elit. Illo, sapiente tenetur? consequuntur.</p>
+                        <hr>  
+                        
+                        <div class="clearfix">
+                            <img src="img1.PNG" class="col-md-4 float-md-end mb-3 ms-md-3" alt="..." height="500px">
+                            <p>                       
+                                <span style="color: black;font-weight:bold;font-size: 30px;">Excepteur sinto occaecat cupidatat non proiden ayt, sunt in quirh adipiscin elit sed do dolore</span><br>
+                                <div id="grid">
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro aperiam hic voluptatibus perspiciatis.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepteur sinto occaecat cupidatat non proiden ayt Odit quis fugiat libero dolores laudantium dolore sunt, maxime consequatur nisi tempore, officiis quia! Natus doloribus modi voluptatibus quo atque explicabo.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis fugiat libero dolores laudantium dolore sunt, maxime consequatur nisi tempore, officiis quia! Natus doloribus modi voluptatibus quo atque explicabo.</div>
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae porro aperiam hic voluptatibus perspiciatis.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepteur sinto occaecat cupidatat non proiden ayt Odit quis fugiat libero dolores laudantium dolore sunt, maxime consequatur nisi tempore, officiis quia! Natus doloribus modi voluptatibus quo atque explicabo.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis fugiat libero dolores laudantium dolore sunt, maxime consequatur nisi tempore, officiis quia! Natus doloribus modi voluptatibus quo atque explicabo.</div>                                                                            
+                                </div><br><br>
+                            </p>
+                        </div>
+                        <hr>
+                        <span style="color: black;font-weight:bold;font-size: 30px;">Excepteur sinto occaecat cupidatat non proiden ayt, sunt in quirh adipiscin elit sed do dolore</span><br>
+                    <div class="row">
+                        <div class="col-sm-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, saepe! Molestiae qui doloribus adipisci quo exercitationem molestias iste, culpa officia blanditiis, corporis velit delectus distinctio id asperiores, earum repellendus deserunt fugiat libero dolores laudantium dolore sunt!<br><br></div>
+                        <div class="col-sm-8" style="background-color: rgb(185, 184, 184);"><div class="today" style="margin-top: -15px;">25 12 34</div><div class="pages">Pages 25</div></div>                   
+                    </div>
+                    <hr>
+                    <span style="color: black;font-weight:bold;font-size: 30px;">Excepteur sinto occaecat cupidatat non proiden ayt, sunt in quirh adipiscin elit sed do dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet placeat nihil.</span><br>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-4"><div class="today">Today 01</div><br>Lorem ipsum dolor sit amet, Sint lem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti, vitae voluptatibus, dolore aliquid rerum maiores laudantium placeat necessitatibus neque at corporis veritatis eius distinctio repellat dolorem,Veniam deleniti, vitae voluptas excepturi facere.</div>
+                        <div class="col-sm-4"><hr><span style="color: maroon;text-align: center;padding:4px;font-weight: bold;font-size: 25px;">Ut Enim ad minim veniam,Sint tenetur esse.</span><br><hr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quas delectus nobis libero quam totam magni nemo tenetur sit veritatis.Veniam deleniti, vitae voluptatibus Delectus, ullam. Repellat, ad asperiores. Quam repellendus consectetur minus eos.</div>
+                        <div class="col-sm-4"><img src="img1.PNG" class="float-md-end img-fluid" alt="..."></div>
+                    </div>
+                    <hr>
+                        
+                        <div class="col-5 textBold">
+                            25 Lorem ipsum 1234/56/78
+                        </div>
+                        <div class="col-5 textBold" style="text-align: right;">
+                            lorem ipsum dolor sit amet
+                        </div>
+                        <br><br>
+                </div>
+                </div>
+
+    </div>
+</body>
+
+</html>
